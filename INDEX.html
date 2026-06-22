@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rita Romero Ruiz | Data Analyst Portfolio</title>
+<link rel="stylesheet" href="output.css">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<style>
+        body {
+            background-color: #051424;
+            color: #d4e4fa;
+            font-family: 'Hanken Grotesk', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .coral-glow {
+            box-shadow: 0 0 20px rgba(255, 107, 83, 0.3);
+        }
+        .nav-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .ticker-wrap {
+            overflow: hidden;
+        }
+        .ticker-move {
+            display: flex;
+            animation: ticker 30s linear infinite;
+        }
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 nav-blur border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-on-surface" href="#">Rita Romero Ruiz</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-sm text-label-sm text-primary border-b-2 border-primary pb-1" href="#home">HOME</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#about">ABOUT</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#projects">PROJECTS</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" href="#contact">CONTACT</a>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 px-gutter max-w-container-max mx-auto" id="home">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
+<!-- Left Content -->
+<div class="order-2 md:order-1 flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-[2px] bg-primary-container"></div>
+<span class="font-headline-md text-2xl text-on-surface">Hello • I'm Rita Romero Ruiz</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg leading-none">
+                    Data <span class="text-primary">Analyst</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                    Turning raw data into actionable insights through expert data cleaning, visualization, and predictive modeling.
+                </p>
+<div class="flex gap-4 mt-4">
+<a class="bg-primary-container text-on-primary-fixed px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform coral-glow" href="#contact">
+                        Contact Me
+                    </a>
+<a class="border border-primary text-primary px-8 py-4 rounded-full font-bold hover:bg-primary/10 transition-colors" href="#">
+                        Download Resume
+                    </a>
+</div>
+</div>
+<!-- Right Content (Image) -->
+<div class="order-1 md:order-2 flex justify-center items-center relative">
+<div class="relative w-full max-w-[500px] aspect-square flex items-center justify-center">
+<img alt="Rita Romero Ruiz Hero Avatar" class="relative z-10 w-4/5 h-4/5 object-cover rounded-full" src="Rita.png"/>
+<!-- Geometric frames handled by the placeholder's description, but we add a glow -->
+<div class="absolute inset-0 rounded-full border-2 border-primary/20 animate-pulse"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Ticker -->
+<div class="ticker-wrap w-full bg-surface-container-low py-8 border-y border-outline-variant/20 mb-section-gap">
+<div class="ticker-move flex gap-12 whitespace-nowrap px-gutter">
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">SQL <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">PYTHON <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">TABLEAU <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">R <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">POWER BI <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">ETL <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">A/B TESTING <span class="text-primary">•</span></span>
+<!-- Duplicate for infinite effect -->
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">SQL <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">PYTHON <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">TABLEAU <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">R <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">POWER BI <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">ETL <span class="text-primary">•</span></span>
+<span class="font-label-sm text-2xl text-on-surface-variant flex items-center gap-2">A/B TESTING <span class="text-primary">•</span></span>
+</div>
+</div>
+<!-- About / Metrics Section -->
+<section class="px-gutter max-w-container-max mx-auto mb-section-gap" id="about">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<!-- Services Column -->
+<div class="flex flex-col gap-10">
+<div class="flex items-start gap-6 group">
+<div class="w-16 h-16 bg-surface-container-high rounded-xl flex items-center justify-center text-primary border border-outline-variant/30 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-4xl">database</span>
+</div>
+<div>
+<h3 class="font-headline-md text-2xl mb-2">Data Collection</h3>
+<div class="w-10 h-[2px] bg-primary mb-4"></div>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-16 h-16 bg-surface-container-high rounded-xl flex items-center justify-center text-primary border border-outline-variant/30 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-4xl">cleaning_services</span>
+</div>
+<div>
+<h3 class="font-headline-md text-2xl mb-2">Data Cleaning &amp; Transformation</h3>
+<div class="w-10 h-[2px] bg-primary mb-4"></div>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-16 h-16 bg-surface-container-high rounded-xl flex items-center justify-center text-primary border border-outline-variant/30 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-4xl">monitoring</span>
+</div>
+<div>
+<h3 class="font-headline-md text-2xl mb-2">Exploratory Data Analysis</h3>
+<div class="w-10 h-[2px] bg-primary mb-4"></div>
+</div>
+</div>
+</div>
+<!-- Description & Stats Column -->
+<div class="flex flex-col justify-center">
+<h2 class="font-display-lg text-4xl md:text-5xl mb-8">About me</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">
+                    I leverage statistical rigor and visual storytelling to reveal the patterns hidden within complex datasets. My background combines deep technical proficiency in SQL and Python with the business acumen needed to bridge the gap between data engineering and executive strategy.
+                </p>
+<div class="grid grid-cols-3 gap-8">
+<div>
+<div class="font-display-lg text-3xl md:text-5xl text-on-surface flex items-center gap-1">100<span class="text-primary">+</span></div>
+<div class="font-label-sm text-xs text-on-surface-variant uppercase mt-2">Datasets Analyzed</div>
+</div>
+<div>
+<div class="font-display-lg text-3xl md:text-5xl text-on-surface flex items-center gap-1">98<span class="text-primary">%</span></div>
+<div class="font-label-sm text-xs text-on-surface-variant uppercase mt-2">Insight Accuracy</div>
+</div>
+<div>
+<div class="font-display-lg text-3xl md:text-5xl text-on-surface flex items-center gap-1">5<span class="text-primary">+</span></div>
+<div class="font-label-sm text-xs text-on-surface-variant uppercase mt-2">Years Experience</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="px-gutter max-w-container-max mx-auto mb-section-gap" id="projects">
+<div class="flex flex-col items-center mb-section-gap">
+<h2 class="font-display-lg text-5xl mb-4">Projects</h2>
+<div class="w-[2px] h-12 bg-primary"></div>
+</div>
+<div class="flex flex-col gap-32">
+<!-- Project 1: Text-Image -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1 flex flex-col gap-6">
+<h3 class="font-headline-xl text-3xl">Retail Sales Predictive Analysis</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">Python</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">Scikit-learn</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">Pandas</span>
+</div>
+<p class="font-body-md text-on-surface-variant">
+                        Addressing seasonal inventory overstocking by implementing a time-series forecasting model that predicted demand with 92% accuracy across 15 store categories.
+                    </p>
+<div class="flex gap-6 mt-4">
+<a class="bg-primary-container text-on-primary-fixed px-6 py-3 rounded-full font-bold text-sm hover:opacity-90 transition-opacity" href="#">View Report</a>
+<a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="#">
+                            Git Repo <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="order-1 md:order-2 bg-surface-container p-2 rounded-xl border border-outline-variant/30">
+<img alt="Retail Sales Predictive Analysis Dashboard" class="w-full rounded-lg shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqMmvHOtx3wbN2HxRcPE5D7jPauQPRuODJ0m0DB4pZJxcs-y83JnTQt0-uDWTs6SolVswcaq8hYejcMN5-_xxQbzQ9tm2OJe0x8xD-cN1BhW4v9lJld3qU-FGjiB_qK1bTs8D9IkkqsI5f4QnkOdYM48zmBpRcE_YpSxi9cnGR1dF-Y6fjzXWLtRt7iaoAD3Zi8yp8aoYOi4iujuxXOOL0L0R6i5wv9L2zcEZYTKxVeaiu_oufTm_8wN2meFDHSkEG-HVjoYXxEDQ"/>
+</div>
+</div>
+<!-- Project 2: Image-Text -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="order-1 bg-surface-container p-2 rounded-xl border border-outline-variant/30">
+<img alt="Supply Chain Optimization Dashboard" class="w-full rounded-lg shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqMmvHOtx3wbN2HxRcPE5D7jPauQPRuODJ0m0DB4pZJxcs-y83JnTQt0-uDWTs6SolVswcaq8hYejcMN5-_xxQbzQ9tm2OJe0x8xD-cN1BhW4v9lJld3qU-FGjiB_qK1bTs8D9IkkqsI5f4QnkOdYM48zmBpRcE_YpSxi9cnGR1dF-Y6fjzXWLtRt7iaoAD3Zi8yp8aoYOi4iujuxXOOL0L0R6i5wv9L2zcEZYTKxVeaiu_oufTm_8wN2meFDHSkEG-HVjoYXxEDQ"/>
+</div>
+<div class="order-2 flex flex-col gap-6">
+<h3 class="font-headline-xl text-3xl">Supply Chain Optimization</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">SQL</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">Tableau</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">ETL</span>
+</div>
+<p class="font-body-md text-on-surface-variant">
+                        Streamlined logistics workflows by identifying bottlenecks in trans-Pacific shipping lanes, resulting in a 14% reduction in overall transit times for high-value SKU units.
+                    </p>
+<div class="flex gap-6 mt-4">
+<a class="bg-primary-container text-on-primary-fixed px-6 py-3 rounded-full font-bold text-sm hover:opacity-90 transition-opacity" href="#">View Report</a>
+<a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="#">
+                            Git Repo <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Project 3: Text-Image -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="order-2 md:order-1 flex flex-col gap-6">
+<h3 class="font-headline-xl text-3xl">Customer Churn Identification</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">Python</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">Power BI</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">Random Forest</span>
+</div>
+<p class="font-body-md text-on-surface-variant">
+                        Developed a machine learning model to flag at-risk subscribers for a SaaS platform, enabling targeted retention campaigns that saved $250k in annual recurring revenue.
+                    </p>
+<div class="flex gap-6 mt-4">
+<a class="bg-primary-container text-on-primary-fixed px-6 py-3 rounded-full font-bold text-sm hover:opacity-90 transition-opacity" href="#">View Report</a>
+<a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="#">
+                            Git Repo <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="order-1 md:order-2 bg-surface-container p-2 rounded-xl border border-outline-variant/30">
+<img alt="Customer Churn Identification Dashboard" class="w-full rounded-lg shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqMmvHOtx3wbN2HxRcPE5D7jPauQPRuODJ0m0DB4pZJxcs-y83JnTQt0-uDWTs6SolVswcaq8hYejcMN5-_xxQbzQ9tm2OJe0x8xD-cN1BhW4v9lJld3qU-FGjiB_qK1bTs8D9IkkqsI5f4QnkOdYM48zmBpRcE_YpSxi9cnGR1dF-Y6fjzXWLtRt7iaoAD3Zi8yp8aoYOi4iujuxXOOL0L0R6i5wv9L2zcEZYTKxVeaiu_oufTm_8wN2meFDHSkEG-HVjoYXxEDQ"/>
+</div>
+</div>
+<!-- Project 4: Image-Text -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="order-1 bg-surface-container p-2 rounded-xl border border-outline-variant/30">
+<img alt="A/B Test Evaluation Dashboard" class="w-full rounded-lg shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqMmvHOtx3wbN2HxRcPE5D7jPauQPRuODJ0m0DB4pZJxcs-y83JnTQt0-uDWTs6SolVswcaq8hYejcMN5-_xxQbzQ9tm2OJe0x8xD-cN1BhW4v9lJld3qU-FGjiB_qK1bTs8D9IkkqsI5f4QnkOdYM48zmBpRcE_YpSxi9cnGR1dF-Y6fjzXWLtRt7iaoAD3Zi8yp8aoYOi4iujuxXOOL0L0R6i5wv9L2zcEZYTKxVeaiu_oufTm_8wN2meFDHSkEG-HVjoYXxEDQ"/>
+</div>
+<div class="order-2 flex flex-col gap-6">
+<h3 class="font-headline-xl text-3xl">E-commerce A/B Test Evaluation</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">R</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">Hypothesis Testing</span>
+<span class="px-3 py-1 bg-surface-container-highest rounded-full text-[10px] font-label-sm text-on-surface uppercase">ggplot2</span>
+</div>
+<p class="font-body-md text-on-surface-variant">
+                        Conducted statistical significance tests on a new checkout flow, proving a 3.5% uplift in conversion rates and verifying the reliability of findings through bootstrap resampling.
+                    </p>
+<div class="flex gap-6 mt-4">
+<a class="bg-primary-container text-on-primary-fixed px-6 py-3 rounded-full font-bold text-sm hover:opacity-90 transition-opacity" href="#">View Report</a>
+<a class="flex items-center gap-2 text-on-surface hover:text-primary transition-colors" href="#">
+                            Git Repo <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-gutter max-w-container-max mx-auto mb-section-gap" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<div class="flex flex-col">
+<div class="w-12 h-[2px] bg-primary-container mb-6"></div>
+<h2 class="font-display-lg text-5xl md:text-7xl leading-tight">Have a data project?<br/>Let's talk!</h2>
+</div>
+<div class="flex flex-col gap-8">
+<form class="flex flex-col gap-10">
+<div class="relative">
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant/50 focus:border-primary focus:ring-0 px-0 py-4 font-body-md text-on-surface placeholder:text-on-surface-variant transition-all outline-none" placeholder="Name" type="text"/>
+</div>
+<div class="relative">
+<input class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant/50 focus:border-primary focus:ring-0 px-0 py-4 font-body-md text-on-surface placeholder:text-on-surface-variant transition-all outline-none" placeholder="Email" type="email"/>
+</div>
+<div class="relative">
+<textarea class="w-full bg-transparent border-t-0 border-x-0 border-b border-outline-variant/50 focus:border-primary focus:ring-0 px-0 py-4 font-body-md text-on-surface placeholder:text-on-surface-variant transition-all outline-none resize-none" placeholder="Message" rows="4"></textarea>
+</div>
+<div>
+<button class="bg-primary-container text-on-primary-fixed px-12 py-4 rounded-full font-bold hover:scale-105 transition-transform coral-glow" type="submit">
+                            Submit
+                        </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="flex flex-col items-center gap-element-gap w-full px-margin-mobile text-center">
+<h4 class="font-headline-md text-headline-md text-on-surface">Rita Romero Ruiz</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Rita Romero Ruiz. Designed for Precision.</p>
+<div class="flex gap-6 mt-4">
+<a class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:border-primary hover:text-primary transition-all group" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="w-12 h-12 rounded-full border border-outline-variant/30 flex items-center justify-center hover:border-primary hover:text-primary transition-all group" href="#">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth reveal on scroll interaction
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+
+        // Navigation active state toggle
+        const navLinks = document.querySelectorAll('nav a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                link.classList.add('text-on-surface-variant');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                    link.classList.remove('text-on-surface-variant');
+                }
+            });
+        });
+    </script>
+</body></html>
