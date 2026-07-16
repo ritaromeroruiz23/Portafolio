@@ -122,13 +122,51 @@ nav ul{
 
 nav a{
 
+    position:relative;
+
     color:white;
 
     text-decoration:none;
 
-    transition:.3s;
-
     font-weight:500;
+
+    transition:.35s;
+
+    padding-bottom:8px;
+
+}
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:0;
+
+    height:3px;
+
+    background:var(--azul);
+
+    border-radius:20px;
+
+    transition:.35s;
+
+}
+
+nav a:hover{
+
+    color:var(--azul);
+
+}
+
+nav a:hover::after{
+
+    width:100%;
 
 }
 
@@ -896,11 +934,28 @@ section{
     box-shadow:0 20px 40px rgba(78,168,255,.25);
 }
 
+.project-card{
+
+    overflow:hidden;
+
+}
+
 .project-card img{
+
     width:100%;
+
     height:220px;
+
     object-fit:cover;
-    display:block;
+
+    transition:.5s;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.08);
+
 }
 
 .project-content{
@@ -962,4 +1017,166 @@ section{
 
 .project-buttons a:hover{
     transform:translateY(-4px);
+}
+
+/*======================================================
+                    CONTACTO
+======================================================*/
+
+.contact{
+    padding:120px 0;
+    background:#07121f;
+}
+
+.contact-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:60px;
+}
+
+.contact-item{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.35s;
+    backdrop-filter:blur(10px);
+}
+
+.contact-item:hover{
+    transform:translateY(-10px);
+    border-color:var(--azul);
+    box-shadow:0 20px 45px rgba(78,168,255,.20);
+}
+
+.contact-item i{
+    font-size:42px;
+    color:var(--azul);
+    margin-bottom:20px;
+}
+
+.contact-item h3{
+    font-size:22px;
+    margin-bottom:15px;
+    color:#fff;
+}
+
+.contact-item p,
+.contact-item a{
+    color:#cfd8e3;
+    text-decoration:none;
+    line-height:1.6;
+    transition:.3s;
+}
+
+.contact-item a:hover{
+    color:var(--azul);
+}
+
+/*======================================
+        ANIMACIÓN TARJETAS
+======================================*/
+
+.project-card,
+.skill-card,
+.education-card,
+.timeline-content,
+.contact-item{
+
+    transition:.35s;
+
+}
+
+.project-card:hover,
+.skill-card:hover,
+.education-card:hover,
+.timeline-content:hover,
+.contact-item:hover{
+
+    transform:translateY(-10px);
+
+}
+
+footer{
+
+    background:#050d18;
+
+    padding:50px 0;
+
+    text-align:center;
+
+    color:#c8d2df;
+
+    margin-top:80px;
+
+}
+
+footer .social{
+
+    margin:25px 0;
+
+}
+
+footer .social a{
+
+    color:white;
+
+    margin:0 15px;
+
+    font-size:26px;
+
+    transition:.3s;
+
+}
+
+footer .social a:hover{
+
+    color:var(--azul);
+
+}
+
+#topBtn{
+
+    display:none;
+
+    position:fixed;
+
+    bottom:35px;
+
+    right:35px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--azul);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:0 10px 25px rgba(78,168,255,.35);
+
+    transition:.35s;
+
+}
+
+#topBtn:hover{
+
+    transform:translateY(-5px);
+
 }
